@@ -31,6 +31,10 @@ void setup()
   // --------------------------------------------------------------------------
   // Gruppe 1:
   // Initialisierung der Pins
+  pinMode(ci_PinButton1, INPUT_PULLUP);
+  pinMode(ci_PinButton2, INPUT_PULLUP);
+  pinMode(ci_PinLed1, OUTPUT);
+  pinMode(ci_PinLed2, OUTPUT);
   
 }
 
