@@ -47,7 +47,8 @@ void loop()
   // --------------------------------------------------------------------------
   // Gruppe 2:
   // Aktuellen Zustand der Taster lesen
-  
+  b_CurrentStateButton1 = digitalRead(ci_PinButton1) == LOW;
+  b_CurrentStateButton2 = digitalRead(ci_PinButton2) == LOW;
 
   // --------------------------------------------------------------------------
   // Gruppe 3:
