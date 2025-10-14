@@ -48,7 +48,16 @@ void loop()
   // --------------------------------------------------------------------------
   // Gruppe 3:
   // Flankenerkennung für Taster 1
-  
+  if (b_CurrentStateButton1 && !b_LastStateButton1)
+{
+  b_BlinkLed1 = !b_BlinkLed1; //Blinkbetrieb umschalten
+  if (!b_BlinkLed1)
+{
+  digitalWrite(ci_PinLed1, LOW); //LED ausschalten, wenn der Blinkbetrieb beendet wird
+}
+}
+b_LastStateButton1 = b_CurrentStateButton1;
+
 
   // --------------------------------------------------------------------------
   // Gruppe 4:
