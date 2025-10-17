@@ -102,6 +102,3 @@ b_LastStateButton1 = b_CurrentStateButton1;
     } 
   } 
 } 
-  
-  
-}
