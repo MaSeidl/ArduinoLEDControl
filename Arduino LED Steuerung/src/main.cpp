@@ -6,10 +6,10 @@
 const int ci_PinButton1 = 2; // Pin für den ersten Taster
 const int ci_PinButton2 = 3; // Pin für den zweiten Taster
 const int ci_PinLed1 = 9;    // Pin für die erste LED
-const int ci_PinLed2 = 10;   // Pin für die zweite LED
+
 
 // Variablen zur Speicherung des aktuellen und vorherigen Zustands der Taster
-bool b_CurrentStateButton1 = false;
+bool b_CurrentStateButton1 = true;
 bool b_LastStateButton1 = false;
 bool b_CurrentStateButton2 = false;
 bool b_LastStateButton2 = false;
