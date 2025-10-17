@@ -67,7 +67,13 @@ b_LastStateButton1 = b_CurrentStateButton1;
   // --------------------------------------------------------------------------
   // Gruppe 4:
   // Flankenerkennung für Taster 2
-  
+  if (b_CurrentStateButton2 && !b_LastStateButton2) {
+    b_BlinkLed2 = !b_BlinkLed2; //Blinkbetrieb umschalten 
+    if (!b_BlinkLed2) {
+      digitalWrite(ci_PinLed2, LOW); //LED auschalten, wenn der BLinkbetieb beendet wird
+    }
+  }
+  b_LastStateButton2 = b_CurrentStateButton2;
 
   // --------------------------------------------------------------------------
   // Gruppe 5:
