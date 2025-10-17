@@ -77,8 +77,17 @@ b_LastStateButton1 = b_CurrentStateButton1;
 
   // --------------------------------------------------------------------------
   // Gruppe 5:
-  // Blinkbetrieb für LED 1
-  
+  // Blinkbetrieb für LED 1  
+  if (b_BlinkLed1)
+  {
+    unsigned long ul_CurrentMillis = millis();
+    if (ul_CurrentMillis - ul_PreviousMillisLed1 >= l_BlinkInterval)
+    {
+      ul_PreviousMillisLed1 = ul_CurrentMillis;
+      digitalWrite(ci_PinLed1, !digitalRead(ci_PinLed1)); // LED-Zustand umschalten
+    }
+  }
+
 
   // --------------------------------------------------------------------------
   // Gruppe 6:
